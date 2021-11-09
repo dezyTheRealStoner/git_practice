@@ -12,7 +12,7 @@ class FirstPage extends StatelessWidget {
         title: const Text('Page 1'),
       ),
       body: Container(
-        color: Colors.black,
+        color: Colors.yellow,
         child: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
