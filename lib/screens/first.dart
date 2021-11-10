@@ -13,6 +13,8 @@ class FirstPage extends StatelessWidget {
       ),
       body: Container(
         color: Colors.black,
+        padding: const EdgeInsets.all(20),
+        margin: const EdgeInsets.all(20),
         child: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
