@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:git_practice/buttons.dart';
 
-class ThirdPage extends StatelessWidget {
+class ThirdPage extends StatefulWidget {
   const ThirdPage({Key? key}) : super(key: key);
 
+  @override
+  State<ThirdPage> createState() => _ThirdPageState();
+}
+
+class _ThirdPageState extends State<ThirdPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +22,18 @@ class ThirdPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              Button(context, '/'),
+              Button('N', context, '/'),
               const Spacer(),
-              Button(context, 'second'),
+              Button('M', context, 'second'),
               const Spacer(),
-              Button(context, 'third'),
+              OutlinedButton(
+                onPressed: () {
+                  setState(() {
+                    Navigator.pop(context);
+                  });
+                },
+                child: const Text('back'),
+              ),
               const Spacer(),
             ],
           ),

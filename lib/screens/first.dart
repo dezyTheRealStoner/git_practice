@@ -12,7 +12,6 @@ class FirstPage extends StatelessWidget {
         title: const Text('Page 1'),
       ),
       body: Container(
-        color: Colors.black,
         padding: const EdgeInsets.all(20),
         margin: const EdgeInsets.all(20),
         child: Center(
@@ -20,11 +19,11 @@ class FirstPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              Button(context, '/'),
+              Button('1', context, '/'),
               const Spacer(),
-              Button(context, 'second'),
+              Button('N', context, 'second'),
               const Spacer(),
-              Button(context, 'third'),
+              Button('M', context, 'third'),
               const Spacer(),
             ],
           ),

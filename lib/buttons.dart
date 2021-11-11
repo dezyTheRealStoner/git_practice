@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  Button(this.context, this.route);
+  Button(this.text, this.context, this.route);
 
   final context;
   final route;
-
-  static const text = 'Page 1';
+  final text;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class Button extends StatelessWidget {
       onPressed: () {
         Navigator.pushNamed(context, route);
       },
-      child: const Text(text),
+      child: Text(text),
     );
   }
 }
